@@ -9,5 +9,5 @@ import (
 func main() {
 	database.StartDB()
 	r := router.StartApp()
-	r.Run(os.Getenv("PORT"))
+	r.Run(":" + os.Getenv("PORT"))
 }
